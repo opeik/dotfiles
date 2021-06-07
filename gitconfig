@@ -19,3 +19,5 @@
 
 [mergetool "vscode"]
     cmd = code --wait $MERGED
+[push]
+	default = current
