@@ -17,5 +17,5 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --profile default --default-toolchain nightly, Installing rust]
-  - [sh -c "$(curl -fsSL https://starship.rs/install.sh)", Installing starship]
+  - [sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- -y, Installing starship]
   - [chsh -s $(which zsh), Making zsh the default shell]

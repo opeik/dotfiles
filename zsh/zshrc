@@ -42,5 +42,9 @@ function chpwd() {
 # Load cargo environment.
 source ${HOME}/.cargo/env
 
+# Load zsh-vi-mode plugin.
+zinit ice depth=1
+zinit light jeffreytse/zsh-vi-mode
+
 # Start starship prompt.
 eval "$(starship init zsh)"
