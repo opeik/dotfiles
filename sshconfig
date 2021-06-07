@@ -1,0 +1,10 @@
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    PreferredAuthentications publickey
+    PasswordAuthentication no
+    KbdInteractiveAuthentication no
+
+Host github.com
+    User git
+	IdentityFile ~/.ssh/github

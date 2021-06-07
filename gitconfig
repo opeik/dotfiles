@@ -1,0 +1,21 @@
+[user]
+    name = Sandro Stikić
+    email = sandro@stikic.me
+
+[core]
+    editor = code --wait
+    excludesfile = /Users/opeik/.gitignore
+    eol = lf
+    autocrlf = false
+
+[diff]
+    tool = vscode
+
+[merge]
+    tool = vscode
+
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
